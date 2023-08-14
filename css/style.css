@@ -50,6 +50,15 @@ body {
     padding: 20px;
 }
 
+/* Existing styles for cards and images */
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
 .card {
     background-color: white;
     border-radius: 8px;
@@ -71,6 +80,13 @@ body {
     font-size: 18px;
     color: #333;
 }
+
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+}
+
 .dropdown-content {
     display: none;
     background-color: white;
